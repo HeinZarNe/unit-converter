@@ -1,129 +1,211 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: #9f9f9f;
-}
-.img{
-    margin-left: 20px;
-    height: 50px;
-    margin-right: 20px;
-    border-radius: 50%;
-    border: 1px solid greenyellow;
-}
-.navbar-brand{
-    font-weight: bold;
-    font-size: 25px;
-}
-.container{
-    width: 100%;
-}
-.nav-link{
-    font-size: 18px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.dropdown-menu.show {
-    display: block;
-    background:#ffc107;
-    
-}
-.card{
-    background-color: #9f9f9f;
-    
-}
-.card-body{
-    height: 480px;
-    display: flex;
-    flex-direction: row;    
-}
-.leftside{
-    width: 50%;
-    padding-left: 400px;
-    padding-top: 120px;
-}
-.input{
-    width: 200px;
-    height: 33px;
-    border: none;
-    border-radius: 5px;
-}
-.select{
-    width: 200px;
-    height: 38px;
-    border: none;
-    border-radius: 3px;
-}
-.calc{
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-}
-.result{
-    width: 200px;
-    height: 40px;
-    margin-bottom: 5px;
-    border: 1px solid black;
-    text-align: center;
-}
-.rightside{
-    width: 50%;
-    padding-left: 100px;
-    padding-top: 50px;
-}
-.foot{
-    margin-top: 10px;
-    margin-left: 550px;
-    color: white;
-}
-
-@media screen and (max-width: 480px){
-    .card-body{
-        height: 480px;
-        display: grid; 
-    }
-    .leftside{
-        width: 50%;
-        padding-top: 0px;
-        padding-left: 85px;
-        margin-bottom: 30px
-    }
-    .rightside{
-        width: 100%;
-        padding-top: 0;
-    padding-left: 10px;
-    }
-    .result{
-        width: 325px;
-        height: 50px;
-    }
-    .foot{
-        display: none;
-    }
-}
-@media screen and (max-width: 780px){
-    .card-body{
-        height: 480px;
-      
-    }
-    .leftside{
-        width: 50%;
-        padding-top: 0px;
-        padding-left: 85px;
-        margin-bottom: 30px
-    }
-    .rightside{
-        width: 100%;
-        padding-top: 0px;
-    padding-left: 10px;
-    }
-    .result{
-        width: 325px;
-        height: 50px;
-    }
-    .foot{
-        display: none;
-    }
-}
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    background-color: #c4c4c4;
+                    ;
+                }
+                
+                .img {
+                    margin-left: 20px;
+                    height: 50px;
+                    margin-right: 20px;
+                    border-radius: 50%;
+                    border: 1px solid greenyellow;
+                }
+                
+                input {
+                    padding: 5px 10px;
+                    background: #f2f2f2;
+                }
+                
+                input:focus-visible {
+                    outline-offset: 0px;
+                    outline: none;
+                }
+                
+                select:focus-visible {
+                    outline-offset: 0px;
+                    outline: none;
+                }
+                
+                .navbar-brand {
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+                
+                .container {
+                    width: 100%;
+                }
+                
+                .nav-link {
+                    font-size: 18px;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+                
+                .dropdown-menu.show {
+                    display: block;
+                    background: #ffc107;
+                }
+                
+                .card {
+                    background-color: #c4c4c4;
+                }
+                
+                .card-body {
+                    height: 480px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+                
+                .leftCard {
+                    width: 50%;
+                }
+                
+                .rightCard {
+                    width: 50%;
+                }
+                
+                .leftside {
+                    width: 50%;
+                }
+                
+                .input {
+                    width: 200px;
+                    height: 33px;
+                    border: none;
+                    border-radius: 5px;
+                }
+                
+                .select {
+                    width: 200px;
+                    height: 38px;
+                    border: none;
+                    border-radius: 5px;
+                }
+                
+                .calc {
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 5px;
+                }
+                
+                .result {
+                    width: 300px;
+                    height: 40px;
+                    margin-bottom: 5px;
+                    text-align: center;
+                    border-radius: 3px;
+                    background: rgb(221, 221, 221);
+                    line-height: 40px;
+                    letter-spacing: 3px;
+                    font-size: 15px;
+                    margin-bottom: 14px;
+                }
+                
+                .rightside {
+                    width: 50%;
+                    padding-left: 100px;
+                    padding-top: 50px;
+                }
+                
+                .foot {
+                    margin-top: 10px;
+                    margin: auto;
+                    color: white;
+                    padding-top: 170px;
+                }
+                
+                @media screen and (min-width: 782px) {
+                    .leftside {
+                        width: 200px;
+                        margin: auto;
+                        padding-left: 14%;
+                    }
+                    .rightside {
+                        width: 300px;
+                        margin: auto;
+                        margin-right: 225px;
+                        padding-left: 0px;
+                    }
+                }
+                
+                @media screen and (max-width: 780px) {
+                    .card-body {
+                        height: 480px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                    }
+                    .card {
+                        height: 90vh;
+                    }
+                    .leftCard {
+                        width: 50%;
+                        padding-top: 0px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        margin-bottom: 30px;
+                    }
+                    .rightside {
+                        width: 100%;
+                        padding-top: 0px;
+                        padding-left: 10px;
+                    }
+                    .result {
+                        width: 99%;
+                        height: 50px;
+                    }
+                    .foot {
+                        display: none;
+                    }
+                }
+                
+                @media screen and (max-width: 480px) {
+                    .container-fluid {
+                        padding-left: 0;
+                    }
+                    .rightCard {
+                        width: 100%;
+                    }
+                    .card-body {
+                        height: 480px;
+                        display: grid;
+                    }
+                    .leftCard {
+                        width: 200px;
+                        padding-top: 0px;
+                        padding-left: 0px !important;
+                        margin: auto;
+                        margin-bottom: 30px
+                    }
+                    .rightside {
+                        width: 100%;
+                        padding-top: 0;
+                        padding-left: 10px;
+                    }
+                    .result {
+                        width: 90%;
+                        height: 50px;
+                        margin: 14px auto;
+                    }
+                    .foot {
+                        display: none;
+                    }
+                }
+                
+                @media screen and (max-width: 352px) {
+                    .navbar-brand {
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                    .container-fluid img {
+                        height: 46px;
+                        margin-right: 5px;
+                    }
+                }
