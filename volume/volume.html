@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume</title>
+
+    <!-- <link rel="stylesheet" href="vandor/bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vandor/feather-icons-web/feather.css"> -->
+    <link rel="stylesheet" href="../vandor/bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./volume.css">
+    <link rel="stylesheet" href="../vandor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="../vandor/animate_it/animate.css">
+    <link rel="icon" href="../vandor/LOGoPNG.PNG" type="image/gif" sizes="16x16">
+
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <div class="header ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow-sm">
+            <div class="container-fluid main-color navItem-container">
+                <!--nav-left-->
+                <div class="navbar-left d-flex align-items-center" id="nav-left">
+                    <img src="../vandor/LOGoPNG.PNG" class="me-2 img rounded-1" alt="" width="45" bg-light>
+                    <a class="navbar-brand navbarText fw-bold me-2" href="../mainPage/index.html">Unit Converter</a>
+
+                </div>
+                <!--nav-left-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--nav-right-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center" id="nav-right">
+                        <li class="nav-item ms-2 rounded-2">
+                            <i class="feather-home" style="font-weight: bold;
+                            font-size: 20px;"></i>
+                            <a class="nav-link active" aria-current="page" href="../mainPage/index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item ms-2 rounded-2 li-length">
+                            <i class="fas fa-ruler"></i>
+                            <a class="nav-link active" href="../length/length.html">Length</a>
+                        </li>
+                        <li class="nav-item ms-2 rounded-2 li-weight">
+                            <i class="fas fa-weight-hanging"></i>
+                            <a class="nav-link active" href="../weight/weight.html">Weight</a>
+                        </li>
+                        <li class="nav-item ms-2 rounded-2 li-temp">
+                            <i class="fas fa-thermometer-half"></i>
+                            <a class="nav-link active" href="../temperature/temperature.html">Temperature</a>
+                        </li>
+                        <li class="nav-item ms-2 rounded-2 li-area">
+                            <i class="fas fa-expand-alt areaicon"></i>
+                            <a class="nav-link active" href="../area/area.html">Area</a>
+                        </li>
+                        <li class="nav-item ms-2 rounded-2 li-volume">
+                            <i class="feather-box icon" style="font-weight: bold;
+                            font-size: 20px;"></i>
+                            <a class="nav-link active" href="../volume/volume.html"><u>Volume</u></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--nav-right-->
+            </div>
+        </nav>
+    </div>
+
+    <!-- mainBody -->
+
+    <div class="body animate__animated animate__fadeInUp">
+
+        <div class="card border-0 ">
+
+            <div class="card-body col-12 ">
+                <div class="leftCard">
+                    <div class="leftside ">
+                        <div class="input d-grid ">
+                            <h4>Amount</h4>
+                            <input type="number" placeholder="Type number" class="input shadow" id="input-amount" required>
+                        </div>
+                        <div class=" d-grid mt-5 ">
+                            <h5>Select Unit</h5>
+                            <select name=" " id="input-unit" class="select shadow ">
+
+    </select>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="rightCard">
+                    <div class="rightside ">
+                        <div class="result ">
+                            <p class="mt-1 " id="output-m3">0 m<sup>3</sup></p>
+                        </div>
+                        <div class="result ">
+                            <p value=" " class="mt-1 " id="output-cm3">0 cm<sup>3</sup></p>
+                        </div>
+                        <div class="result ">
+                            <p value=" " class="mt-1 " id="output-ft3">0 ft<sup>3</sup></p>
+                        </div>
+                        <div class="result ">
+                            <p value=" " class="mt-1 " id="output-in3">0 in<sup>3</sup></p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <!-- <script src="vandor/bootstrap-5.0.2/dist/js/bootstrap.min.js "></script> -->
+    <script src="../Api.js"></script>
+    <script src="./volume.js"></script>
+    <script src="../vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

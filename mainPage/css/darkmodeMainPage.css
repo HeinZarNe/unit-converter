@@ -1,0 +1,49 @@
+body .darkmode {
+    background-color: black;
+}
+
+.darkmode .header,
+.darkmode .navbar,
+.darkmode .navItem-container,
+.darkmode .footer {
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.darkmode .navbar-brand {
+    color: white;
+}
+
+.darkmode .navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+.darkmode .footer {
+    color: white;
+}
+
+.darkmode .dropdown-menu {
+    background: #a6a6a6;
+    border: none;
+}
+
+.darkmode .center-container {
+    background-color: #000000b8;
+}
+
+.darkmode .main {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.darkmode .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.9) !important;
+}

@@ -1,0 +1,15 @@
+.imgDiv {
+    width: 100%;
+}
+
+.imgDiv img {
+    width: 100%;
+}
+
+.row {
+    align-items: center;
+}
+
+p {
+    word-spacing: 2px;
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Red+Hat+Display:wght@300;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    background: #74ebd5;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ACB6E5, #74ebd5);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-color {
+    background: #50C9C3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96DEDA, #50C9C3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background-color: #51ace9; */
+}
+
+
+/* .second-main-color {
+    position: absolute;
+    transform: translateY(-100%);
+} */
+
+
+/* .centerBGImg {
+    height: 82%;
+    background-image: url('../img/rm373batch13-082.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    background-repeat: no-repeat;
+} */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    height: 100vh;
+}
+
+.navbar {
+    height: 10vh;
+}
+
+.navbarText {
+    font-size: 25px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.rounded-1 {
+    border-radius: 50% !important;
+    /* border: 1px solid greenyellow; */
+}
+
+.center {
+    height: 81vh;
+}
+
+.night,
+.day {
+    width: 35px;
+    height: 35px;
+    background-color: #313335;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+
+.day {
+    background-color: #96DEDA;
+    color: black;
+    display: none;
+}
+
+#nav-right .nav-link {
+    font-size: 18px;
+}
+
+.option-container {
+    width: 100%;
+}
+
+.option {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    background-color: hsl(203, 30%, 26%);
+    display: flex;
+    color: hsl(0, 0%, 90%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    /* border: 1px solid #51ace9; */
+    box-shadow: rgb(0 0 0 / 25%) 0px 23px 321px -34px, #9baebc 0px 30px 76px -30px;
+}
+
+.option:hover {
+    background-color: hsl(203, 30%, 29%);
+    color: hsl(0, 0%, 100%);
+    transform: translateY(-10px);
+}
+
+.navbar-light .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.icon:hover {
+    color: white;
+}
+
+@keyframes bounceIcon {
+    0% {
+        transform: scale(1.6);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.6);
+    }
+}
+
+.footer {
+    text-align: center;
+}
+
+@media screen and (min-width:991px) {
+    .icon {
+        animation: bounceIcon 2s infinite;
+        animation-fill-mode: forwards;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .option {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+    .optionToChoose a {
+        width: 100%;
+    }
+    .option:hover {
+        transform: rotate(1deg);
+    }
+}
+
+@media screen and (max-width:320px) {
+    #nav-left .navbar-brand {
+        font-size: 15px;
+    }
+}

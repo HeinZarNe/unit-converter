@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="../vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../vendor/featherIcons/feather.css">
+    <link rel="stylesheet" href="css/contactform.css">
+    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="../vandor/animate_it/animate.css">
+    <link rel="icon" href="../vandor/LOGoPNG.PNG" type="image/gif" sizes="16x16">
+
+</head>
+
+<body class="dark" style="background-color: #fff;">
+    <section class="main ">
+        <section class="header main-color contianer-fluid animate__animated animate__fadeInDown">
+            <!--navbar-->
+            <nav class="navbar navbar-expand-lg navbar-light main-color shadow-sm ">
+                <div class="container-fluid main-color navItem-container">
+                    <!--nav-left-->
+                    <div class="navbar-left d-flex align-items-center" id="nav-left">
+                        <img src="../vandor/LOGoPNG.PNG" class="me-2 rounded-1" alt="" width="45" bg-light>
+                        <a class="navbar-brand navbarText fw-bold me-2" href="#">Unit Converter</a>
+                        <div class="night">
+                            <i class="feather-moon"></i>
+                        </div>
+                        <div class="day">
+                            <i class="feather-sun"></i>
+                        </div>
+                    </div>
+                    <!--nav-left-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                    <!--nav-right-->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center" id="nav-right">
+                            <li class="nav-item ms-2 rounded-2">
+
+                                <a class="nav-link active" aria-current="page" href="index.html"><u>Home</u></a>
+                            </li>
+                            <li class="nav-item ms-2 rounded-2">
+                                <a class="nav-link active" href="../unit-converter-mainpageuiwithbootstrap/Detials.html" target="_blank">Details</a>
+                            </li>
+                            <li class="nav-item dropdown ms-2 rounded-2">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Options
+                    </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../length/length.html">Length</a></li>
+                                    <li><a class="dropdown-item" href="../weight/weight.html">Weight</a></li>
+                                    <li><a class="dropdown-item" href="../temperature/temperature.html">Temperature</a></li>
+                                    <li><a class="dropdown-item" href="../area/area.html">Area</a></li>
+                                    <li><a class="dropdown-item" href="../volume/volume.html">Volume</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item ms-2 rounded-2">
+                                <a class="nav-link active" href="../unit-converter-aboutus/aboutus.html" target="blink">About</a>
+                            </li>
+                            <li class="nav-item ms-2 rounded-2">
+                                <a class="nav-link active" href="contactform.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--nav-right-->
+                </div>
+            </nav>
+            <!--navbar-->
+        </section>
+        <!--header-->
+        <div class="container contact-form d-flex align-items-center" id="contact-form">
+            <div class="row">
+                <div class="col-md-6 left mb-3 p-0 d-flex align-items-center justify-content-center">
+                    <img class="img-fluid" src="../mainPage/img/5124556-removebg-preview.png" alt="">
+                </div>
+                <div class="col-md-6 right d-flex align-items-center justify-content-center">
+                    <form action="" class="form-container pt-3">
+                        <!-- <div class="login-with d-flex align-items-center justify-content-between">
+                            <div class="fw-bold">Login with</div>
+                            <div class="d-flex align-items-center">
+                                <i class="feather-facebook login-icon"></i><i class="feather-twitter login-icon"></i><i class="feather-instagram login-icon"></i><i class="feather-linkedin login-icon"></i>
+                            </div>
+                        </div> -->
+                        <!-- <div class="fw-bold ms-4 text-center my-2">or</div> -->
+                        <div>Your Name</div>
+                        <div class="urnameGp">
+                            <input type="text" class="yourName" placeholder="First Name">
+                            <input type="text" class="yourName" placeholder="Last Name">
+                        </div>
+                        <div>Your Email Address</div>
+                        <input class="form-control" type="email" required>
+                        <div class="fs-small mt-1">We'll never share your email with anyone else</div>
+                        <div>Your Message</div>
+                        <div class="textArea"><textarea name="" id="" cols="" rows=""></textarea></div>
+                        <!-- <div class="mt-3">Password</div>
+                        <input class="form-control" type="password" minlength="6" required>
+                        <div class="check-and-forger-password d-flex align-items-center justify-content-between mt-2">
+                            <div class="d-flex align-items-center">
+                                <input type="checkbox">
+                                <div class="ms-2 mt-1">Check me out</div>
+                            </div>
+                            <div class="fs-small text-primary" style="cursor: pointer;">forget password?</div>
+                        </div> -->
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-primary">Send now.</button>
+                        </div>
+                        <!-- <div class="text-center mt-2">Don't have an account? <span class="text-primary" style="cursor: pointer;">Register</span></div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="../vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
