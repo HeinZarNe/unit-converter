@@ -6,6 +6,10 @@
     width: 100%;
 }
 
+.col-12 {
+    margin-top: 10px !important;
+}
+
 .row {
     align-items: center;
 }

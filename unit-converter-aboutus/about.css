@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @media screen and (max-width: 330px) {
     .our-email {
         font-size: 13px;
