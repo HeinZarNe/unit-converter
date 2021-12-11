@@ -18,7 +18,7 @@ let unit = {
     },
     "temperature": {
         "Degree Celcius": 1,
-        "K": 274.15,
+        "Kelvin": 274.15,
         "Fahrenheit": 33.8,
     },
     "area": {

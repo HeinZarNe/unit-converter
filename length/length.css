@@ -245,7 +245,7 @@ select:focus-visible {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 782px) {
     .container-fluid {
         padding-left: 0;
     }
